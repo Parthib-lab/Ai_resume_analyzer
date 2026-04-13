@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "npx plugins add vercel/vercel-plugin"
+    "ai-resume-analyzer-mpwaptw5m-parthib1.vercel.app"
   ],
   credentials: true
 }));
