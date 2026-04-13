@@ -10,7 +10,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000',   // Backend port
+    // baseURL: 'http://localhost:3000',   // Backend port
+	baseURL: 'https://ai-resume-backend-ntez.onrender.com',
     timeout: 10000,
 });
 

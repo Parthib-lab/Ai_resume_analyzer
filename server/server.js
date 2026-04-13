@@ -28,7 +28,14 @@ connectDB().then(() => {
 });
 
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "npx plugins add vercel/vercel-plugin"
+  ],
+  credentials: true
+}));
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
